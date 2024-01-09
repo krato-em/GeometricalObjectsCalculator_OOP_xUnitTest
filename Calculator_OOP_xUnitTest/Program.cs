@@ -62,7 +62,11 @@ do
                 Console.ResetColor();
             }
             else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid input");
+                Console.ResetColor();
+            }
             break;
 
         case "3":
@@ -82,7 +86,11 @@ do
                 Console.ResetColor();
             }
             else
-                Console.WriteLine("Wrong input");
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid input");
+                Console.ResetColor();
+            }
             break;
 
         case "4":
@@ -105,7 +113,11 @@ do
                 Console.ResetColor();
             }
             else
-                Console.WriteLine("Worng input");
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid input");
+                Console.ResetColor();
+            }
             break;
 
         case "5":
@@ -122,7 +134,11 @@ do
                 Console.ResetColor();
             }
             else
-                Console.WriteLine("Wrong input");
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid input");
+                Console.ResetColor();
+            }
             break;
 
         case "6":
@@ -138,8 +154,12 @@ do
                 Console.WriteLine(Initialization.SphereInitialization(sphereRadius));
                 Console.ResetColor();
             }
-            else 
-                Console.WriteLine("Wrong Input");
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid input");
+                Console.ResetColor();
+            }
             break;
 
         case "0":

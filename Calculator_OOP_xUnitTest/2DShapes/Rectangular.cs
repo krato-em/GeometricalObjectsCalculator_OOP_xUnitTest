@@ -11,21 +11,18 @@ namespace Calculator_OOP_xUnitTest._2DShapes
     {
         public double AreaCalculate(double lengthA, double lengthB)
         {
-            if (double.IsNaN(lengthA) || double.IsNaN(lengthB))
-            {
-                throw new System.FormatException("The input must be a number.");
-            }
-            else if (lengthA <= 0 || lengthB <= 0)
-            {
-                throw new System.ArgumentException("The number can't be of a negative value.");
-            }
-            else
-            {
-                return lengthA * lengthB;
-            }
+
+            IsInvalidInput(lengthA, lengthB);
+            return lengthA * lengthB;
         }
 
         public double CircumferenceCalculate(double lengthA, double lengthB)
+        {
+            IsInvalidInput(lengthA, lengthB);
+            return 2 * (lengthA + lengthB);
+        }
+
+        private void IsInvalidInput(double lengthA, double lengthB)
         {
             if (double.IsNaN(lengthA) || double.IsNaN(lengthB))
             {
@@ -34,10 +31,6 @@ namespace Calculator_OOP_xUnitTest._2DShapes
             else if (lengthA <= 0 || lengthB <= 0)
             {
                 throw new System.ArgumentException("The number can't be of a negative value.");
-            }
-            else
-            {
-                return 2 * (lengthA + lengthB);
             }
         }
     }

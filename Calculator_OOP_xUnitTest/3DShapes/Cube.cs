@@ -11,21 +11,17 @@ namespace Calculator_OOP_xUnitTest._3DShapes
     {
         public double SurfaceAreaCalculate(double length)
         {
-            if (double.IsNaN(length))
-            {
-                throw new System.FormatException("The input must be a number.");
-            }
-            else if (length <= 0)
-            {
-                throw new System.ArgumentException("The number can't be of a negative value.");
-            }
-            else
-            {
-                return Math.Pow(length, 2) * 6;
-            }
+            IsInvalidInput(length);
+            return Math.Pow(length, 2) * 6;
         }
 
         public double VolumeCalculate(double length)
+        {
+            IsInvalidInput(length);
+            return Math.Pow(length, 3);
+        }
+
+        private void IsInvalidInput(double length)
         {
             if (double.IsNaN(length))
             {
@@ -34,10 +30,6 @@ namespace Calculator_OOP_xUnitTest._3DShapes
             else if (length <= 0)
             {
                 throw new System.ArgumentException("The number can't be of a negative value.");
-            }
-            else
-            {
-                return Math.Pow(length, 3);
             }
         }
     }

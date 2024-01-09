@@ -11,21 +11,17 @@ namespace Calculator_OOP_xUnitTest._2DShapes
     {
         public double AreaCalculate(double radius)
         {
-            if (double.IsNaN(radius))
-            {
-                throw new System.FormatException("The input must be a number.");
-            }
-            else if (radius <= 0)
-            {
-                throw new System.ArgumentException("The number can't be of a negative value.");
-            }
-            else
-            {
-                return Math.PI * Math.Pow(radius, 2);
-            }
+            IsInvalidInput(radius);
+            return Math.PI * Math.Pow(radius, 2);
         }
 
         public double CircumferenceCalculate(double radius)
+        {
+            IsInvalidInput(radius);
+            return 2 * Math.PI * radius;
+        }
+
+        private void IsInvalidInput(double radius)
         {
             if (double.IsNaN(radius))
             {
@@ -34,10 +30,6 @@ namespace Calculator_OOP_xUnitTest._2DShapes
             else if (radius <= 0)
             {
                 throw new System.ArgumentException("The number can't be of a negative value.");
-            }
-            else
-            {
-                return 2 * Math.PI * radius;
             }
         }
     }
