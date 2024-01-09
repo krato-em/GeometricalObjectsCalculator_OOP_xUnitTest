@@ -15,7 +15,7 @@ namespace Calculator_OOP_xUnitTest._3DShapes
             {
                 throw new System.FormatException("The input must be a number.");
             }
-            else if (length < 0)
+            else if (length <= 0)
             {
                 throw new System.ArgumentException("The number can't be of a negative value.");
             }
@@ -31,7 +31,7 @@ namespace Calculator_OOP_xUnitTest._3DShapes
             {
                 throw new System.FormatException("The input must be a number.");
             }
-            else if (length < 0)
+            else if (length <= 0)
             {
                 throw new System.ArgumentException("The number can't be of a negative value.");
             }
