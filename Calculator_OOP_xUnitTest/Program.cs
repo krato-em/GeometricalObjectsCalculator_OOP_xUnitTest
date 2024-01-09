@@ -41,7 +41,11 @@ do
                 Console.ResetColor();
             }
             else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid input");
+                Console.ResetColor();
+            }
             break;
 
         case "2":
