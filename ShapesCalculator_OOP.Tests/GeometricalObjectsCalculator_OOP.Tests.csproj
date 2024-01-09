@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Calculator_OOP_xUnitTest\ShapesCalculator_OOP.csproj" />
+    <ProjectReference Include="..\Calculator_OOP_xUnitTest\GeometricalObjectsCalculator_OOP.csproj" />
   </ItemGroup>
 
 </Project>

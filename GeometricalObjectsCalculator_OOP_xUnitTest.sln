@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesCalculator_OOP", "Calculator_OOP_xUnitTest\ShapesCalculator_OOP.csproj", "{76117BC5-610E-42F9-B3A3-85509301F37C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometricalObjectsCalculator_OOP", "Calculator_OOP_xUnitTest\GeometricalObjectsCalculator_OOP.csproj", "{76117BC5-610E-42F9-B3A3-85509301F37C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesCalculator_OOP.Tests", "ShapesCalculator_OOP.Tests\ShapesCalculator_OOP.Tests.csproj", "{1EE02403-E636-432C-9D40-07C963CF86C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometricalObjectsCalculator_OOP.Tests", "ShapesCalculator_OOP.Tests\GeometricalObjectsCalculator_OOP.Tests.csproj", "{1EE02403-E636-432C-9D40-07C963CF86C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
